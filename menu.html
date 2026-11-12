@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FAMILY RESTAURANT Menu - Multi-cuisine selection of Indian, Chinese, Italian Pizzas & Pastas, Desserts, and Coolers. Illustrative demo prices with add-to-cart capability.">
+  <title>Menu - FAMILY RESTAURANT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span>Welcome to FAMILY RESTAURANT:</span> Enjoy delicious multi-cuisine family meals, freshly prepared with love and hygiene! Demo Hotline: <strong>+91 90000 00000</strong>
+  </aside>
+
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" aria-label="FAMILY RESTAURANT Home">
+        <span class="site-logo">FAMILY RESTAURANT</span>
+        <span class="site-logo-tagline">Good Food • Great Moments</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="primaryNav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="offers.html" class="nav-link">Special Offers</a></li>
+          <li><a href="family-dining.html" class="nav-link">Family Dining</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="booking.html" class="nav-link">Table Booking</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart Action & Hamburger -->
+      <div class="nav-actions">
+        <button class="cart-icon-btn cart-toggle-trigger" aria-label="View demo shopping cart" title="View Demo Cart">
+          🛒
+          <span class="cart-counter">0</span>
+        </button>
+        <button class="mobile-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Page Header -->
+    <section class="section-padding section-bg-light text-center" style="padding: 3.5rem 0;">
+      <div class="container">
+        <span class="section-subtitle">Fresh Flavors For Everyone</span>
+        <h1>Our Food Menu</h1>
+        <div class="section-divider"></div>
+        <p style="max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
+          Carefully prepared delicacies spanning 6 diverse categories. All listed prices are illustrative demo prices. Use the interactive filters or search to explore and add items to your demo cart!
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Controls & Menu Items -->
+    <section class="section-padding">
+      <div class="container">
+
+        <!-- Controls: Search & Category Filter Pills -->
+        <div class="menu-controls">
+          <div class="search-box-wrapper">
+            <span class="search-icon-label" aria-hidden="true">🔍</span>
+            <input type="text" id="menuSearchInput" class="search-input" placeholder="Search dishes by name or description..." aria-label="Search dishes">
+          </div>
+
+          <div class="filter-tags" role="toolbar" aria-label="Menu category filters">
+            <button class="filter-btn menu-filter-btn active" data-filter="all">All Dishes (24)</button>
+            <button class="filter-btn menu-filter-btn" data-filter="starters">Starters</button>
+            <button class="filter-btn menu-filter-btn" data-filter="indian">Indian Main Course</button>
+            <button class="filter-btn menu-filter-btn" data-filter="chinese">Chinese Cuisine</button>
+            <button class="filter-btn menu-filter-btn" data-filter="pizza-pasta">Pizza & Pasta</button>
+            <button class="filter-btn menu-filter-btn" data-filter="desserts">Desserts</button>
+            <button class="filter-btn menu-filter-btn" data-filter="beverages">Beverages</button>
+          </div>
+        </div>
+
+        <!-- No match notification -->
+        <div id="noMenuMatchMessage" style="display: none; text-align: center; padding: 3rem 1rem;">
+          <div style="font-size: 3rem; margin-bottom: 0.5rem; opacity: 0.5;">🍽️</div>
+          <h3>No dishes match your search or filter.</h3>
+          <p>Try searching with another keyword or select "All Dishes".</p>
+        </div>
+
+        <!-- Food Menu Grid (24 Specific Items) -->
+        <div class="menu-grid" id="menuItemsGrid">
+
+          <!-- CATEGORY 1: STARTERS -->
+          <!-- 1. Veg Spring Rolls -->
+          <article class="menu-card menu-item-card" data-category="starters">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/starters-spring-rolls.jpg" alt="Crispy Veg Spring Rolls" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Veg Spring Rolls</h3>
+                <span class="menu-item-price">₹149</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Golden crisp hand-rolled wrappers filled with fresh wok-tossed cabbage, carrots, and glass noodles, served with sweet chilli dip.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Starter</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="starter-1" data-name="Veg Spring Rolls" data-price="149">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Paneer Tikka -->
+          <article class="menu-card menu-item-card" data-category="starters">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/starters-paneer-tikka.jpg" alt="Tandoori Paneer Tikka" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Paneer Tikka</h3>
+                <span class="menu-item-price">₹229</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Tender cottage cheese chunks marinated in spiced yogurt and roasted in a traditional clay tandoor with bell peppers and onions.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Chef Special</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="starter-2" data-name="Paneer Tikka" data-price="229">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Crispy Corn -->
+          <article class="menu-card menu-item-card" data-category="starters">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/starters-crispy-corn.jpg" alt="Golden Crispy Corn" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Crispy Corn</h3>
+                <span class="menu-item-price">₹179</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Crunchy golden American sweet corn tossed with freshly crushed black pepper, aromatic herbs, diced green chillies, and lemon zest.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Kids' Favorite</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="starter-3" data-name="Crispy Corn" data-price="179">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Chicken Tikka -->
+          <article class="menu-card menu-item-card" data-category="starters">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/starters-chicken-tikka.jpg" alt="Sizzling Charcoal Chicken Tikka" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Chicken Tikka</h3>
+                <span class="menu-item-price">₹269</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-nonveg">Non-Vegetarian</span></div>
+              <p class="menu-card-desc">Juicy boneless chicken marinated in Kashmiri red chili, hung curd, and stone-ground spices, cooked over glowing charcoal.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Bestseller</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="starter-4" data-name="Chicken Tikka" data-price="269">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CATEGORY 2: INDIAN MAIN COURSE -->
+          <!-- 5. Paneer Butter Masala -->
+          <article class="menu-card menu-item-card" data-category="indian">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/main-paneer-butter-masala.jpg" alt="Paneer Butter Masala Curry" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Paneer Butter Masala</h3>
+                <span class="menu-item-price">₹249</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Soft paneer cubes simmered in a slow-cooked silky tomato-cashew gravy finished with butter, kasuri methi, and heavy cream.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Family Favorite</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="indian-1" data-name="Paneer Butter Masala" data-price="249">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Dal Tadka -->
+          <article class="menu-card menu-item-card" data-category="indian">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/main-dal-tadka.jpg" alt="Yellow Dal Tadka" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Dal Tadka</h3>
+                <span class="menu-item-price">₹179</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Yellow lentils tempered with aromatic desi ghee, whole cumin seeds, chopped garlic, fresh tomatoes, and garden coriander.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Comfort Food</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="indian-2" data-name="Dal Tadka" data-price="179">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Veg Biryani -->
+          <article class="menu-card menu-item-card" data-category="indian">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/main-veg-biryani.jpg" alt="Royal Veg Dum Biryani" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Veg Biryani</h3>
+                <span class="menu-item-price">₹199</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Long grain aged basmati rice cooked on slow dum with seasonal farm vegetables, saffron strands, and mint leaves. Served with cool raita.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Aromatic</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="indian-3" data-name="Veg Biryani" data-price="199">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. Chicken Biryani -->
+          <article class="menu-card menu-item-card" data-category="indian">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/main-chicken-biryani.jpg" alt="Royal Chicken Dum Biryani" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Chicken Biryani</h3>
+                <span class="menu-item-price">₹259</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-nonveg">Non-Vegetarian</span></div>
+              <p class="menu-card-desc">Succulent chicken pieces layered between fragrant basmati rice, caramelized onions, and royal spices, slow-sealed in a traditional pot.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Bestseller</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="indian-4" data-name="Chicken Biryani" data-price="259">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9. Butter Chicken -->
+          <article class="menu-card menu-item-card" data-category="indian">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/main-butter-chicken.jpg" alt="Authentic Butter Chicken Makhani" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Butter Chicken</h3>
+                <span class="menu-item-price">₹299</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-nonveg">Non-Vegetarian</span></div>
+              <p class="menu-card-desc">Charcoal-grilled chicken pieces simmered in an aromatic rich tomato, cashew, and butter gravy with mild royal seasonings.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Classic</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="indian-5" data-name="Butter Chicken" data-price="299">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CATEGORY 3: CHINESE CUISINE -->
+          <!-- 10. Veg Fried Rice -->
+          <article class="menu-card menu-item-card" data-category="chinese">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/chinese-fried-rice.jpg" alt="Wok-tossed Veg Fried Rice" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Veg Fried Rice</h3>
+                <span class="menu-item-price">₹169</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Steamed rice tossed in a high-heat wok with diced carrots, beans, baby corn, scallions, and light savory soy reduction.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Chinese</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="chinese-1" data-name="Veg Fried Rice" data-price="169">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11. Hakka Noodles -->
+          <article class="menu-card menu-item-card" data-category="chinese">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/chinese-hakka-noodles.jpg" alt="Indo-Chinese Hakka Noodles" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Hakka Noodles</h3>
+                <span class="menu-item-price">₹179</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Classic tossed noodles with sliced cabbage, bell peppers, spring onions, and gentle garlic-ginger seasoning.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Popular</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="chinese-2" data-name="Hakka Noodles" data-price="179">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12. Chilli Paneer -->
+          <article class="menu-card menu-item-card" data-category="chinese">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/chinese-chilli-paneer.jpg" alt="Zesty Chilli Paneer" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Chilli Paneer</h3>
+                <span class="menu-item-price">₹219</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Crispy batter-fried paneer cubes tossed with capsicum, red onions, garlic, and tangy spicy soy-chilli sauce.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Zesty</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="chinese-3" data-name="Chilli Paneer" data-price="219">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 13. Chicken Manchurian -->
+          <article class="menu-card menu-item-card" data-category="chinese">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/chinese-chicken-manchurian.jpg" alt="Savory Chicken Manchurian" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Chicken Manchurian</h3>
+                <span class="menu-item-price">₹249</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-nonveg">Non-Vegetarian</span></div>
+              <p class="menu-card-desc">Tender chicken dumplings simmered in a luscious dark coriander-garlic Manchurian gravy with scallions.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Special</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="chinese-4" data-name="Chicken Manchurian" data-price="249">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CATEGORY 4: PIZZA & PASTA -->
+          <!-- 14. Margherita Pizza -->
+          <article class="menu-card menu-item-card" data-category="pizza-pasta">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/pizza-margherita.jpg" alt="Artisanal Margherita Pizza" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Margherita Pizza</h3>
+                <span class="menu-item-price">₹199</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Stone-baked artisanal hand-tossed dough topped with Italian herb tomato concasse, 100% mozzarella, and fresh basil.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Italian Classic</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="italian-1" data-name="Margherita Pizza" data-price="199">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 15. Farmhouse Pizza -->
+          <article class="menu-card menu-item-card" data-category="pizza-pasta">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/pizza-farmhouse.jpg" alt="Loaded Farmhouse Pizza" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Farmhouse Pizza</h3>
+                <span class="menu-item-price">₹279</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Generously loaded with bell peppers, mushrooms, juicy sweet corn, sliced black olives, red onions, and melted mozzarella.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Kids' Favorite</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="italian-2" data-name="Farmhouse Pizza" data-price="279">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 16. White Sauce Pasta -->
+          <article class="menu-card menu-item-card" data-category="pizza-pasta">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/pasta-white-sauce.jpg" alt="Creamy White Sauce Pasta" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">White Sauce Pasta</h3>
+                <span class="menu-item-price">₹229</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Penne pasta tossed in velvety béchamel cream sauce with sautéed mushrooms, broccoli florets, and parmesan cheese.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Comfort Meal</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="italian-3" data-name="White Sauce Pasta" data-price="229">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 17. Red Sauce Pasta -->
+          <article class="menu-card menu-item-card" data-category="pizza-pasta">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/pasta-red-sauce.jpg" alt="Tangy Red Sauce Pasta" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Red Sauce Pasta</h3>
+                <span class="menu-item-price">₹219</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Al dente penne cooked in an Italian tomato arrabbiata sauce with garlic, crushed red pepper, oregano, and zucchini.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Tangy</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="italian-4" data-name="Red Sauce Pasta" data-price="219">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CATEGORY 5: DESSERTS -->
+          <!-- 18. Chocolate Brownie -->
+          <article class="menu-card menu-item-card" data-category="desserts">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/dessert-brownie.jpg" alt="Warm Fudgy Chocolate Brownie" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Chocolate Brownie</h3>
+                <span class="menu-item-price">₹129</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Rich Belgian dark chocolate walnut brownie served warm, drizzled with hot melted fudge sauce.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Indulgence</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="dessert-1" data-name="Chocolate Brownie" data-price="129">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 19. Vanilla Ice Cream -->
+          <article class="menu-card menu-item-card" data-category="desserts">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/dessert-vanilla-icecream.jpg" alt="Artisanal Vanilla Ice Cream" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Vanilla Ice Cream</h3>
+                <span class="menu-item-price">₹89</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Two scoops of velvety artisanal vanilla bean ice cream garnished with roasted almond flakes and wafer stick.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Kids' Pick</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="dessert-2" data-name="Vanilla Ice Cream" data-price="89">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 20. Gulab Jamun -->
+          <article class="menu-card menu-item-card" data-category="desserts">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/dessert-gulab-jamun.jpg" alt="Warm Gulab Jamun" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Gulab Jamun</h3>
+                <span class="menu-item-price">₹79</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Soft, melt-in-the-mouth golden dumplings soaked in warm fragrant cardamom and saffron rose-sugar syrup (2 pcs).</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Traditional</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="dessert-3" data-name="Gulab Jamun" data-price="79">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 21. Chocolate Sundae -->
+          <article class="menu-card menu-item-card" data-category="desserts">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/dessert-sundae.jpg" alt="Celebration Chocolate Sundae" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Chocolate Sundae</h3>
+                <span class="menu-item-price">₹149</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Triple scoops of vanilla and dark chocolate ice cream topped with brownie chunks, whipped cream, cherries, and hot fudge.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Special</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="dessert-4" data-name="Chocolate Sundae" data-price="149">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CATEGORY 6: BEVERAGES -->
+          <!-- 22. Fresh Lime Soda -->
+          <article class="menu-card menu-item-card" data-category="beverages">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/beverage-lime-soda.jpg" alt="Chilled Fresh Lime Soda" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Fresh Lime Soda</h3>
+                <span class="menu-item-price">₹79</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Freshly squeezed lime juice infused with bubbly sparkling soda, rock salt, and sugar syrup. (Sweet / Salt / Mixed).</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Refreshing</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="bev-1" data-name="Fresh Lime Soda" data-price="79">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 23. Cold Coffee -->
+          <article class="menu-card menu-item-card" data-category="beverages">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/beverage-cold-coffee.jpg" alt="Thick Creamy Cold Coffee" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Cold Coffee</h3>
+                <span class="menu-item-price">₹129</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Creamy chilled coffee brewed from rich roast Arabica beans, blended with whole milk and topped with chocolate drizzle.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Popular</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="bev-2" data-name="Cold Coffee" data-price="129">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 24. Fresh Orange Juice -->
+          <article class="menu-card menu-item-card" data-category="beverages">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/beverage-lime-soda.jpg" alt="Fresh Fruit Juice" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Fresh Orange Juice</h3>
+                <span class="menu-item-price">₹119</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">100% natural cold-pressed Nagpur oranges, with zero added artificial sugar or water. Healthy and full of vitamin C.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">100% Pure</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="bev-3" data-name="Fresh Orange Juice" data-price="119">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 25. Masala Buttermilk -->
+          <article class="menu-card menu-item-card" data-category="beverages">
+            <div class="img-container card-img-wrap">
+              <img src="assets/images/beverage-lime-soda.jpg" alt="Traditional Masala Buttermilk Chaas" loading="lazy">
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Masala Buttermilk</h3>
+                <span class="menu-item-price">₹59</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Chilled churned curd spiced with crushed ginger, green chilli, roasted cumin powder, black salt, and chopped fresh coriander.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Digestive</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="bev-4" data-name="Masala Buttermilk" data-price="59">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-item-name">Masala Buttermilk</h3>
+                <span class="menu-item-price">₹59</span>
+              </div>
+              <div style="margin-bottom: 0.5rem;"><span class="badge-veg">Vegetarian</span></div>
+              <p class="menu-card-desc">Chilled churned curd spiced with crushed ginger, green chilli, roasted cumin powder, black salt, and chopped fresh coriander.</p>
+              <div class="menu-card-footer">
+                <span class="badge badge-gold">Digestive</span>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="bev-4" data-name="Masala Buttermilk" data-price="59">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Reservation Banner -->
+    <section class="container" style="margin-bottom: 4rem;">
+      <div class="cta-banner">
+        <h2>Craving These Flavors with Your Loved Ones?</h2>
+        <p>Book a spacious booth or private dining table in advance to ensure prompt and welcoming service.</p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="booking.html" class="btn btn-accent">Reserve Your Table Now</a>
+          <a href="#" class="btn btn-outline-light cart-toggle-trigger">Review Demo Cart</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Slide-over Demo Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Demo Shopping Cart">
+    <div class="cart-drawer-header">
+      <h3>Your Demo Order</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items-list" id="cartItemsContainer"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-total-row" style="font-size: 1.3rem;">
+        <span>Total (Demo):</span>
+        <span id="cartTotal" style="color: var(--color-primary);">₹0</span>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-dark-muted); margin-bottom: 1rem;">
+        * This is an illustrative frontend demo. No real payment or delivery is handled.
+      </p>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="btn btn-outline btn-sm" id="clearCartBtn" style="flex: 1;">Clear</button>
+        <button class="btn btn-accent btn-sm" id="checkoutBtn" style="flex: 2;">Demo Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top of page" title="Scroll to top">↑</button>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-cream); margin-bottom: 0.5rem;">FAMILY RESTAURANT</h3>
+          <p style="margin-bottom: 1rem;">A generic category demonstration website representing wholesome family dining, welcoming hospitality, comfortable seating, and freshly prepared multi-cuisine delicacies.</p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Facebook (Demo placeholder)">f</a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram (Demo placeholder)">ig</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter (Demo placeholder)">tw</a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube (Demo placeholder)">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Explore Menu</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="booking.html">Table Booking</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#faq">Dining FAQs</a></li>
+            <li><a href="#" class="cart-toggle-trigger">View Demo Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit & Contact</h4>
+          <p style="margin-bottom: 0.4rem;"><strong>Demo Address:</strong></p>
+          <p style="margin-bottom: 0.8rem;">100 Family Boulevard, Central Dining Zone, City 560001 (Illustrative)</p>
+          <p style="margin-bottom: 0.4rem;"><strong>Demo Phone:</strong> +91 90000 00000</p>
+          <p style="margin-bottom: 0.8rem;"><strong>Demo Email:</strong> demo@example.com</p>
+          <p><strong>Hours:</strong> Mon - Sun: 11:30 AM – 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 FAMILY RESTAURANT. Generic category demonstration website. All rights reserved.</p>
+      <p class="footer-disclaimer">
+        Notice: FAMILY RESTAURANT is a generic concept demonstration website created to showcase design, responsive layout, and interactive features. Fictional demo content, prices, and reviews are illustrative only.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

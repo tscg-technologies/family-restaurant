@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact FAMILY RESTAURANT - Get in touch with us for inquiries, party reservations, location details, and dining FAQs. Front-end demonstration.">
+  <title>Contact Us - FAMILY RESTAURANT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span>Welcome to FAMILY RESTAURANT:</span> Enjoy delicious multi-cuisine family meals, freshly prepared with love and hygiene! Demo Hotline: <strong>+91 90000 00000</strong>
+  </aside>
+
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" aria-label="FAMILY RESTAURANT Home">
+        <span class="site-logo">FAMILY RESTAURANT</span>
+        <span class="site-logo-tagline">Good Food • Great Moments</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="primaryNav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="offers.html" class="nav-link">Special Offers</a></li>
+          <li><a href="family-dining.html" class="nav-link">Family Dining</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="booking.html" class="nav-link">Table Booking</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart Action & Hamburger -->
+      <div class="nav-actions">
+        <button class="cart-icon-btn cart-toggle-trigger" aria-label="View demo shopping cart" title="View Demo Cart">
+          🛒
+          <span class="cart-counter">0</span>
+        </button>
+        <button class="mobile-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Page Header Hero -->
+    <section class="section-padding section-bg-light text-center" style="padding: 3.5rem 0;">
+      <div class="container">
+        <span class="section-subtitle">Get In Touch</span>
+        <h1>Contact Us</h1>
+        <div class="section-divider"></div>
+        <p style="max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
+          Have a question about family reservations, menu options, or dietary requirements? We’re always here to assist you.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="section-padding">
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <!-- Left Column: Contact Information Cards & Map Placeholder -->
+          <div>
+            <div class="contact-info-card">
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Restaurant Details</h2>
+              <p style="font-size: 0.9rem; color: var(--color-dark-muted);">
+                Feel free to contact us through any of our demonstration channels below:
+              </p>
+
+              <!-- Phone -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">📞</div>
+                <div class="contact-detail-content">
+                  <h4>Phone Number</h4>
+                  <p><a href="tel:+919000000000" style="font-weight: 600; color: var(--color-primary);">+91 90000 00000</a> (Illustrative Demo)</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">✉️</div>
+                <div class="contact-detail-content">
+                  <h4>Email Address</h4>
+                  <p><a href="mailto:demo@example.com" style="font-weight: 600; color: var(--color-primary);">demo@example.com</a> (Illustrative Demo)</p>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">📍</div>
+                <div class="contact-detail-content">
+                  <h4>Location Address</h4>
+                  <p>100 Family Boulevard, Central Dining Zone, City 560001 (Fictional Sample Address)</p>
+                </div>
+              </div>
+
+              <!-- Operating Hours -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">🕒</div>
+                <div class="contact-detail-content">
+                  <h4>Business Hours</h4>
+                  <p>Monday – Friday: 11:30 AM – 11:00 PM<br>Saturday & Sunday: 11:00 AM – 11:30 PM</p>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div>
+                <h4 style="margin-bottom: 0.75rem;">Follow Us</h4>
+                <div style="display: flex; gap: 0.75rem;">
+                  <a href="#" class="social-icon-btn" style="background-color: var(--color-primary); color: white;" aria-label="Facebook">f</a>
+                  <a href="#" class="social-icon-btn" style="background-color: var(--color-primary); color: white;" aria-label="Instagram">ig</a>
+                  <a href="#" class="social-icon-btn" style="background-color: var(--color-primary); color: white;" aria-label="Twitter">tw</a>
+                  <a href="#" class="social-icon-btn" style="background-color: var(--color-primary); color: white;" aria-label="YouTube">yt</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location & Facade Image -->
+            <div style="margin-top: 2rem;">
+              <div class="img-container wide-img-wrap">
+                <img src="assets/images/restaurant-map-facade.jpg" alt="Family Restaurant Exterior and Valet Parking Entrance" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Frontend Contact Form -->
+          <div>
+            <!-- Success Message Alert -->
+            <div class="alert-message alert-success" id="contactSuccessAlert" role="alert">
+              <h3 style="color: #1b5e20; font-size: 1.2rem; margin-bottom: 0.4rem;">✓ Demo Message Sent!</h3>
+              <p style="color: #2e7d32; font-size: 0.95rem; margin-bottom: 0;">
+                Thank you for your message. In a live deployment, our guest hospitality team would respond within 24 hours. (This is a frontend demonstration; no email has been sent.)
+              </p>
+            </div>
+
+            <div class="form-card">
+              <h2 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Send Us A Message</h2>
+              <p style="font-size: 0.9rem; margin-bottom: 2rem; color: var(--color-dark-muted);">
+                Fill in the demonstration form below to test our client-side validation.
+              </p>
+
+              <form id="contactForm" novalidate aria-label="Contact inquiry form">
+                <div class="form-grid">
+
+                  <div class="form-group full-width">
+                    <label for="contactName" class="form-label">Your Name *</label>
+                    <input type="text" id="contactName" class="form-control" placeholder="Enter your full name" required>
+                    <span class="form-error">Please enter your name.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">Your Email *</label>
+                    <input type="email" id="contactEmail" class="form-control" placeholder="name@example.com" required>
+                    <span class="form-error">Please enter a valid email address.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactPhone" class="form-label">Contact Number (Optional)</label>
+                    <input type="tel" id="contactPhone" class="form-control" placeholder="+91 90000 00000">
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="contactSubject" class="form-label">Subject *</label>
+                    <select id="contactSubject" class="form-control" required>
+                      <option value="">Select Inquiry Subject</option>
+                      <option value="General Dining Inquiry">General Dining Inquiry</option>
+                      <option value="Birthday Celebration / Party">Birthday Celebration / Party</option>
+                      <option value="Group / Corporate Reservation">Group / Corporate Reservation</option>
+                      <option value="Dietary & Allergen Question">Dietary & Allergen Question</option>
+                      <option value="Feedback / Suggestion">Feedback / Suggestion</option>
+                    </select>
+                    <span class="form-error">Please choose a subject.</span>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="contactMessage" class="form-label">Message *</label>
+                    <textarea id="contactMessage" class="form-control" rows="5" placeholder="Write your message or inquiry here..." required></textarea>
+                    <span class="form-error">Please write your message (minimum 5 characters).</span>
+                  </div>
+
+                  <div class="form-group full-width" style="margin-top: 0.5rem;">
+                    <button type="submit" class="btn btn-primary btn-block" style="padding: 0.9rem;">
+                      Send Demo Message
+                    </button>
+                    <small style="text-align: center; color: var(--color-dark-muted); display: block; margin-top: 0.6rem;">
+                      Demonstration only. No personal data will be transmitted or stored.
+                    </small>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions (FAQ Accordion) -->
+    <section class="section-padding section-bg-light" id="faq" aria-labelledby="faqHeading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Got Questions?</span>
+          <h2 id="faqHeading" class="section-title">Frequently Asked Questions</h2>
+          <div class="section-divider"></div>
+          <p>Find quick answers to common questions about our family dining experience, facilities, and food.</p>
+        </div>
+
+        <div class="faq-list">
+
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you have baby high-chairs and toddler amenities?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, absolutely! We provide complimentary sanitized high-chairs, booster seats, coloring activity sheets, and child-safe tableware to ensure our youngest guests and their parents have a comfortable dining outing.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are vegetarian and non-vegetarian dishes cooked separately?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We maintain strict hygiene protocols and dedicated preparation counters, cookware, and utensils for our pure vegetarian recipes to respect all dietary and religious preferences.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can dishes be customized for low spice or Jain preferences?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! Because our dishes are freshly prepared upon order, our chefs can easily tailor spice levels from zero-spice for kids to specific Jain preparations without onion and garlic. Just inform your server when placing the order.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can we host birthday celebrations or private family dinners?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Certainly. We offer dedicated semi-private celebration areas and modular long tables for groups of 10 to 30 guests. We also assist with cake cutting and offer festive group dining combo packages.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is there dedicated parking available at the venue?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we offer complimentary valet parking and a spacious parking lot with dedicated senior citizen access and wheelchair ramps.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Slide-over Demo Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Demo Shopping Cart">
+    <div class="cart-drawer-header">
+      <h3>Your Demo Order</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items-list" id="cartItemsContainer"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-total-row" style="font-size: 1.3rem;">
+        <span>Total (Demo):</span>
+        <span id="cartTotal" style="color: var(--color-primary);">₹0</span>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-dark-muted); margin-bottom: 1rem;">
+        * This is an illustrative frontend demo. No real payment or delivery is handled.
+      </p>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="btn btn-outline btn-sm" id="clearCartBtn" style="flex: 1;">Clear</button>
+        <button class="btn btn-accent btn-sm" id="checkoutBtn" style="flex: 2;">Demo Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top of page" title="Scroll to top">↑</button>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-cream); margin-bottom: 0.5rem;">FAMILY RESTAURANT</h3>
+          <p style="margin-bottom: 1rem;">A generic category demonstration website representing wholesome family dining, welcoming hospitality, comfortable seating, and freshly prepared multi-cuisine delicacies.</p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Facebook (Demo placeholder)">f</a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram (Demo placeholder)">ig</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter (Demo placeholder)">tw</a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube (Demo placeholder)">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Explore Menu</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="booking.html">Table Booking</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#faq">Dining FAQs</a></li>
+            <li><a href="#" class="cart-toggle-trigger">View Demo Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit & Contact</h4>
+          <p style="margin-bottom: 0.4rem;"><strong>Demo Address:</strong></p>
+          <p style="margin-bottom: 0.8rem;">100 Family Boulevard, Central Dining Zone, City 560001 (Illustrative)</p>
+          <p style="margin-bottom: 0.4rem;"><strong>Demo Phone:</strong> +91 90000 00000</p>
+          <p style="margin-bottom: 0.8rem;"><strong>Demo Email:</strong> demo@example.com</p>
+          <p><strong>Hours:</strong> Mon - Sun: 11:30 AM – 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 FAMILY RESTAURANT. Generic category demonstration website. All rights reserved.</p>
+      <p class="footer-disclaimer">
+        Notice: FAMILY RESTAURANT is a generic concept demonstration website created to showcase design, responsive layout, and interactive features. Fictional demo content, prices, and reviews are illustrative only.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

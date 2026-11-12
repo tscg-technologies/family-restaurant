@@ -1,0 +1,146 @@
+================================================================================
+FAMILY RESTAURANT - GOOGLE FLOW MASTER PROMPT SHEET
+================================================================================
+
+GLOBAL STYLE MODIFIER (Appended to ensure visual consistency):
+"shot on Hasselblad H6D-100c, 50mm f/2.8 lens, warm cinematic restaurant lighting, deep burgundy and warm amber color palette, appetizing food photography, shallow depth of field, authentic gourmet presentation, 8k resolution, commercial advertising photography style, hyper-realistic, photorealistic, clean and hygienic presentation --no blur, low quality, oversaturated, artificial, plastic look"
+
+--------------------------------------------------------------------------------
+1. HERO & ATMOSPHERE IMAGES (16:9 / Landscape)
+--------------------------------------------------------------------------------
+
+[1] hero-family-dining.jpg (Homepage Hero - 16:9)
+Prompt:
+A happy multi-generational Indian family (grandparents, parents, and two smiling young children) seated together around a rich banquet table inside a warm, elegant family restaurant. The table is laden with delicious dishes: tandoori platters, butter chicken, naan bread, crispy spring rolls, and pizza. Soft golden chandelier lighting, comfortable burgundy booth seating in the background, genuine laughter and warm dining ambiance, high-end restaurant photography, commercial shoot, 8k --ar 16:9
+
+[2] interior-ambiance.jpg (Experience Section - 16:9)
+Prompt:
+Interior view of a luxurious, welcoming family restaurant during dinner time. Warm golden pendant lights, plush dark maroon and cream cushioned booth seating, clean polished hardwood flooring, neatly set wooden tables with cutlery and cloth napkins, elegant acoustic wood panels, cozy and inviting family-friendly atmosphere, architectural interior photography, 8k --ar 16:9
+
+[3] interior-dining-hall.jpg (About Us & Gallery - 16:9 or 4:3)
+Prompt:
+Spacious, modern high-ceiling dining hall of a premium multi-cuisine family restaurant. Symmetrical layout with comfortable family booths and large group tables, warm brass lighting fixtures, lush indoor botanical planters, immaculate hygiene, soft depth of field, welcoming hospitality vibe, commercial interior photography --ar 16:9
+
+[4] interior-private-booth.jpg (Family Dining & Gallery - 16:9 or 4:3)
+Prompt:
+Cozy, intimate private family dining booth inside an upscale restaurant. Deep burgundy leather curved sofa seating, warm recessed wall lighting, rustic polished oak table, neatly folded napkins, small elegant floral centerpiece, comfortable dining environment for an intimate family dinner, warm and inviting atmosphere --ar 16:9
+
+[5] chef-kitchen.jpg (About Us Kitchen - 16:9)
+Prompt:
+Professional master chef in a clean, pristine commercial kitchen finishing an Indian gourmet curry dish with fresh cream and coriander leaves, stainless steel cooking equipment in soft focus background, hygienic, warm kitchen ambiance, focus on fresh spices and chef craftsmanship, editorial food documentary style --ar 16:9
+
+[6] celebration-birthday.jpg (Family Dining & Gallery - 16:9 or 4:3)
+Prompt:
+A cheerful family celebrating a child's birthday at a restaurant dining table. A chocolate birthday cake with glowing candles in the center, parents and grandparents clapping happily, colorful subtle celebration decorations, joyous smiles, warm restaurant ambient lighting, candid emotional family moment --ar 16:9
+
+[7] kids-dining-fun.jpg (Family Dining - 16:9)
+Prompt:
+A cute 5-year-old child happily eating a slice of cheesy pizza in a clean restaurant high chair, smiling parent beside them, wooden table with child-safe colorful tableware, activity coloring placemat and fresh orange juice on the table, bright, warm, hygienic family restaurant atmosphere --ar 16:9
+
+[8] restaurant-map-facade.jpg (Contact Location - 16:9)
+Prompt:
+Exterior entrance of a warm, premium modern family restaurant in the evening with glass facade, golden ambient interior lights glowing through wide windows, tasteful outdoor entrance lanterns, tidy valet parking area, inviting and welcoming architecture, twilight ambiance --ar 16:9
+
+--------------------------------------------------------------------------------
+2. FOOD MENU ITEMS (4:3 Aspect Ratio)
+--------------------------------------------------------------------------------
+
+STARTERS:
+[9] starters-spring-rolls.jpg
+Golden crispy fried vegetable spring rolls sliced diagonally, showing crunchy shredded cabbage and carrot filling, served on a black slate platter with sweet chilli dipping sauce, fresh mint sprigs, warm rim lighting, macro food photography --ar 4:3
+
+[10] starters-paneer-tikka.jpg
+Tandoori paneer tikka cubes chargrilled to perfection with charred edges, skewered with roasted bell peppers and onions, served on an artisan stoneware plate with mint chutney and lemon wedges, light wisps of smoke, appetizing food photography --ar 4:3
+
+[11] starters-crispy-corn.jpg
+Bowl of golden crispy fried American sweet corn kernels tossed with cracked black pepper, chopped spring onions, and red bell peppers, served in a ceramic bowl, garnished with microgreens, shallow depth of field, vibrant textures --ar 4:3
+
+[12] starters-chicken-tikka.jpg
+Juicy pieces of chicken tikka with vibrant red tandoori marinade, roasted over charcoal with sizzling edges, garnished with fresh coriander, onion rings, and lime wedge, served on a dark rustic platter, steaming hot, gourmet food photography --ar 4:3
+
+INDIAN MAIN COURSE:
+[13] main-paneer-butter-masala.jpg
+Authentic rich paneer butter masala in a traditional copper handi bowl, velvety orange-red tomato makhani gravy swirled with fresh cream and a pat of melting butter, sprinkled with kasuri methi, soft naan bread in blurred background, warm lighting --ar 4:3
+
+[14] main-dal-tadka.jpg
+Yellow toor dal tadka in a traditional Indian ceramic bowl, tempered with golden garlic, cumin seeds, whole red chilies, and pure ghee floating on top, garnished with fresh cilantro leaves, comforting and homestyle gourmet presentation --ar 4:3
+
+[15] main-veg-biryani.jpg
+Fragrant royal vegetable dum biryani served in an earthen clay pot, long-grain basmati rice layered with saffron, vegetables, caramelized onions, fried cashews, and fresh mint leaves, accompanied by a small bowl of cucumber raita --ar 4:3
+
+[16] main-chicken-biryani.jpg
+Royal Hyderabadi chicken dum biryani, fluffy aromatic basmati rice infused with saffron, caramelized fried onions (birista), tender chicken piece, boiled egg slice, garnished with mint leaves, gourmet restaurant presentation --ar 4:3
+
+[17] main-butter-chicken.jpg
+Silky smooth butter chicken curry served in a black artisan bowl, succulent charcoal-grilled chicken submerged in rich tomato-butter-cream gravy, topped with heavy cream swirl and fresh coriander, tandoori roti nearby, mouthwatering --ar 4:3
+
+CHINESE CUISINE:
+[18] chinese-fried-rice.jpg
+Steaming wok-tossed vegetable fried rice with finely diced carrots, green beans, sweet corn, and spring onions, served in a dark ceramic Chinese bowl with wooden chopsticks resting on the rim, appetizing texture --ar 4:3
+
+[19] chinese-hakka-noodles.jpg
+Colorful Indo-Chinese Hakka noodles wok-tossed with julienned cabbage, bell peppers, carrots, and spring onions, lifted with chopsticks in a dynamic food action shot, glossy savory glaze, shallow depth of field --ar 4:3
+
+[20] chinese-chilli-paneer.jpg
+Semi-gravy chilli paneer, crisp-fried paneer cubes glazed in a dark savory soy-chilli sauce with chunky bell peppers, red onions, and green chillies, sprinkled with toasted sesame seeds and sliced scallions --ar 4:3
+
+[21] chinese-chicken-manchurian.jpg
+Succulent chicken Manchurian dumplings simmered in a dark, glossy soy-garlic-ginger gravy with finely chopped coriander and scallions, served in a round bowl, steam rising gently, gourmet Asian dining style --ar 4:3
+
+PIZZA & PASTA:
+[22] pizza-margherita.jpg
+Artisanal stone-baked Margherita pizza on a rustic wooden board, blistered leopard-spotted crust, rich San Marzano tomato sauce, melted fresh mozzarella cheese, and fresh green basil leaves, slice slightly pulled showing cheese stretch --ar 4:3
+
+[23] pizza-farmhouse.jpg
+Gourmet farmhouse pizza loaded with colorful toppings: green and red bell peppers, sliced button mushrooms, golden sweet corn, black olives, red onions, and melted mozzarella cheese, fresh out of the wood-fired oven --ar 4:3
+
+[24] pasta-white-sauce.jpg
+Creamy penne alfredo pasta in a rich velvety parmesan white cheese sauce with sautéed mushrooms, broccoli florets, cracked black pepper, and shaved parmesan cheese, served in a wide rim ceramic pasta bowl --ar 4:3
+
+[25] pasta-red-sauce.jpg
+Penne arrabbiata in a vibrant Italian herb tomato sauce with garlic, crushed red pepper flakes, olive oil, and fresh parsley, sprinkled with parmesan cheese, rustic warm trattoria styling --ar 4:3
+
+DESSERTS:
+[26] dessert-brownie.jpg
+Warm fudgy chocolate walnut brownie served on a dessert plate, topped with a scoop of melting vanilla bean ice cream and drizzled with hot dark chocolate fudge sauce, cocoa powder dusting, indulgent dessert photography --ar 4:3
+
+[27] dessert-vanilla-icecream.jpg
+Two smooth scoops of premium vanilla bean ice cream in an elegant glass dessert dish, garnished with roasted sliced almonds, fresh mint leaf, and a rolled wafer biscuit, soft studio lighting --ar 4:3
+
+[28] dessert-gulab-jamun.jpg
+Two warm, glossy golden-brown gulab jamuns soaked in aromatic saffron-cardamom sugar syrup, served in a brass bowl, garnished with crushed pistachio slivers and edible silver vark foil --ar 4:3
+
+[29] dessert-sundae.jpg
+Tall glass filled with a loaded chocolate sundae: layers of dark chocolate and vanilla ice cream, brownie chunks, whipped cream rosette, maraschino cherry on top, and rich chocolate ganache drizzle --ar 4:3
+
+BEVERAGES:
+[30] beverage-lime-soda.jpg
+Tall frosted glass of fizzy fresh lime soda filled with clear ice cubes, fresh lime slices, mint leaves, condensation beads on the exterior of the glass, sparkling bubbles, clean refreshing cooler photography --ar 4:3
+
+[31] beverage-cold-coffee.jpg
+Thick, creamy iced cold coffee in a stylish glass cup with chocolate sauce swirl lining the inside of the glass, topped with whipped cream and cocoa powder dusting, coffee beans scattered on wooden tabletop --ar 4:3
+
+[32] beverage-orange-juice.jpg
+Freshly squeezed orange juice in a clear glass tumbler with ice cubes, slice of juicy orange on the rim, bright natural morning sunlight, vibrant natural orange color, healthy and pure beverage shot --ar 4:3
+
+[33] beverage-buttermilk.jpg
+Traditional Indian masala chaas (buttermilk) in a rustic clay kulhad cup, tempered with roasted cumin powder, black salt, and finely chopped green coriander, frothy top with ice, refreshing digestive drink --ar 4:3
+
+--------------------------------------------------------------------------------
+3. SPECIAL OFFERS & PACKAGES (4:3 Aspect Ratio)
+--------------------------------------------------------------------------------
+[34] offer-family-feast.jpg
+A lavish Indian family dining combo meal spread across a wooden table: copper bowls of paneer butter masala and dal tadka, plate of veg spring rolls, basket of butter naan, pot of vegetable biryani, and bowls of gulab jamun, feast styling --ar 4:3
+
+[35] offer-lunch-platter.jpg
+A well-portioned Indian executive lunch thali platter with paneer curry, dal, jeera rice, soft rotis, fresh salad, pickle, and a glass of buttermilk, organized and appetizing corporate/family lunch presentation --ar 4:3
+
+[36] offer-dinner-deal.jpg
+Grand non-veg dinner combination: sizzling chicken tikka platter with green chutney, bowl of rich butter chicken, steaming chicken biryani, tandoori rotis, and chocolate brownies in background, royal feast lighting --ar 4:3
+
+[37] offer-party-pack.jpg
+An expansive banquet table packed with multi-cuisine celebration food: pizzas, pasta bowls, noodles, spring rolls, paneer skewers, refreshing coolers, and dessert sundaes, colorful party feast setup --ar 4:3
+
+[38] offer-weekend-combo.jpg
+Fun fusion weekend dining combination: a colorful farmhouse pizza, bowl of creamy white sauce pasta, plate of Hakka noodles, and two chilled lime sodas arranged together on a rustic cafe table --ar 4:3
+================================================================================

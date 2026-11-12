@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FAMILY RESTAURANT Photo Gallery - Visual showcase of restaurant interiors, family dining spaces, Indian cuisine, Chinese food, pizza, desserts, and celebration dining.">
+  <title>Gallery - FAMILY RESTAURANT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span>Welcome to FAMILY RESTAURANT:</span> Enjoy delicious multi-cuisine family meals, freshly prepared with love and hygiene! Demo Hotline: <strong>+91 90000 00000</strong>
+  </aside>
+
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" aria-label="FAMILY RESTAURANT Home">
+        <span class="site-logo">FAMILY RESTAURANT</span>
+        <span class="site-logo-tagline">Good Food • Great Moments</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="primaryNav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="offers.html" class="nav-link">Special Offers</a></li>
+          <li><a href="family-dining.html" class="nav-link">Family Dining</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="booking.html" class="nav-link">Table Booking</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart Action & Hamburger -->
+      <div class="nav-actions">
+        <button class="cart-icon-btn cart-toggle-trigger" aria-label="View demo shopping cart" title="View Demo Cart">
+          🛒
+          <span class="cart-counter">0</span>
+        </button>
+        <button class="mobile-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Page Header Hero -->
+    <section class="section-padding section-bg-light text-center" style="padding: 3.5rem 0;">
+      <div class="container">
+        <span class="section-subtitle">Visual Tour</span>
+        <h1>Restaurant & Food Gallery</h1>
+        <div class="section-divider"></div>
+        <p style="max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
+          Explore our inviting interiors, warm dining zones, and mouthwatering culinary creations. All frames are prepared as CSS placeholders for easy future image replacements.
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section with Filters -->
+    <section class="section-padding">
+      <div class="container">
+
+        <!-- Gallery Category Filter Buttons -->
+        <div class="menu-controls" style="margin-bottom: 2.5rem;">
+          <div class="filter-tags" role="toolbar" aria-label="Gallery category filters">
+            <button class="filter-btn gallery-filter-btn active" data-category="all">All Photos (12)</button>
+            <button class="filter-btn gallery-filter-btn" data-category="interior">Restaurant Interior</button>
+            <button class="filter-btn gallery-filter-btn" data-category="dining">Dining Area</button>
+            <button class="filter-btn gallery-filter-btn" data-category="family">Family Dining</button>
+            <button class="filter-btn gallery-filter-btn" data-category="indian">Indian Food</button>
+            <button class="filter-btn gallery-filter-btn" data-category="chinese">Chinese Food</button>
+            <button class="filter-btn gallery-filter-btn" data-category="pizza-pasta">Pizza & Pasta</button>
+            <button class="filter-btn gallery-filter-btn" data-category="desserts">Desserts</button>
+            <button class="filter-btn gallery-filter-btn" data-category="beverages">Beverages</button>
+            <button class="filter-btn gallery-filter-btn" data-category="celebration">Celebration Dining</button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid (12 Categorized Showcase Items) -->
+        <div class="gallery-grid" id="galleryGrid">
+
+          <!-- 1. Interior -->
+          <div class="gallery-item" data-category="interior">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/interior-dining-hall.jpg" alt="Grand Dining Hall Interior" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 2. Dining Area -->
+          <div class="gallery-item" data-category="dining">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/interior-private-booth.jpg" alt="Cozy Family Dining Booths" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 3. Family Dining -->
+          <div class="gallery-item" data-category="family">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/hero-family-dining.jpg" alt="Multi-Generational Family Dining" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 4. Indian Food - Thali / Curries -->
+          <div class="gallery-item" data-category="indian">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/main-paneer-butter-masala.jpg" alt="Authentic Indian Paneer Butter Masala" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 5. Indian Food - Tandoori Tikka -->
+          <div class="gallery-item" data-category="indian">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/starters-chicken-tikka.jpg" alt="Sizzling Charcoal Chicken Tikka" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 6. Chinese Food -->
+          <div class="gallery-item" data-category="chinese">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/chinese-hakka-noodles.jpg" alt="Wok Tossed Hakka Noodles" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 7. Pizza & Pasta -->
+          <div class="gallery-item" data-category="pizza-pasta">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/pizza-farmhouse.jpg" alt="Stone-Baked Farmhouse Pizza" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 8. Pizza & Pasta -->
+          <div class="gallery-item" data-category="pizza-pasta">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/pasta-white-sauce.jpg" alt="Creamy White Sauce Penne Pasta" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 9. Desserts -->
+          <div class="gallery-item" data-category="desserts">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/dessert-sundae.jpg" alt="Celebration Chocolate Ice Cream Sundae" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 10. Beverages -->
+          <div class="gallery-item" data-category="beverages">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/beverage-lime-soda.jpg" alt="Refreshing Chilled Lime Soda" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 11. Celebration Dining -->
+          <div class="gallery-item" data-category="celebration">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/celebration-birthday.jpg" alt="Family Birthday Celebration" loading="lazy">
+            </div>
+          </div>
+
+          <!-- 12. Celebration Dining -->
+          <div class="gallery-item" data-category="celebration">
+            <div class="img-container tall-img-wrap">
+              <img src="assets/images/offer-party-pack.jpg" alt="Celebration Banquet Dining Setup" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Gallery CTA Banner -->
+    <section class="container" style="margin-bottom: 4rem;">
+      <div class="cta-banner">
+        <h2>Experience It In Person with Your Family</h2>
+        <p>Photographs only show part of the story. Come savor the authentic aromas, warm hospitality, and delightful flavors firsthand.</p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="booking.html" class="btn btn-accent">Reserve Your Table</a>
+          <a href="menu.html" class="btn btn-outline-light">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Slide-over Demo Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Demo Shopping Cart">
+    <div class="cart-drawer-header">
+      <h3>Your Demo Order</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items-list" id="cartItemsContainer"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-total-row" style="font-size: 1.3rem;">
+        <span>Total (Demo):</span>
+        <span id="cartTotal" style="color: var(--color-primary);">₹0</span>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-dark-muted); margin-bottom: 1rem;">
+        * This is an illustrative frontend demo. No real payment or delivery is handled.
+      </p>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="btn btn-outline btn-sm" id="clearCartBtn" style="flex: 1;">Clear</button>
+        <button class="btn btn-accent btn-sm" id="checkoutBtn" style="flex: 2;">Demo Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top of page" title="Scroll to top">↑</button>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-cream); margin-bottom: 0.5rem;">FAMILY RESTAURANT</h3>
+          <p style="margin-bottom: 1rem;">A generic category demonstration website representing wholesome family dining, welcoming hospitality, comfortable seating, and freshly prepared multi-cuisine delicacies.</p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Facebook (Demo placeholder)">f</a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram (Demo placeholder)">ig</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter (Demo placeholder)">tw</a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube (Demo placeholder)">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Explore Menu</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="booking.html">Table Booking</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#faq">Dining FAQs</a></li>
+            <li><a href="#" class="cart-toggle-trigger">View Demo Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit & Contact</h4>
+          <p style="margin-bottom: 0.4rem;"><strong>Demo Address:</strong></p>
+          <p style="margin-bottom: 0.8rem;">100 Family Boulevard, Central Dining Zone, City 560001 (Illustrative)</p>
+          <p style="margin-bottom: 0.4rem;"><strong>Demo Phone:</strong> +91 90000 00000</p>
+          <p style="margin-bottom: 0.8rem;"><strong>Demo Email:</strong> demo@example.com</p>
+          <p><strong>Hours:</strong> Mon - Sun: 11:30 AM – 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 FAMILY RESTAURANT. Generic category demonstration website. All rights reserved.</p>
+      <p class="footer-disclaimer">
+        Notice: FAMILY RESTAURANT is a generic concept demonstration website created to showcase design, responsive layout, and interactive features. Fictional demo content, prices, and reviews are illustrative only.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

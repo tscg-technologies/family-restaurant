@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FAMILY RESTAURANT Table Reservation - Book your family dining table online. Front-end demonstration form with validation.">
+  <title>Table Booking - FAMILY RESTAURANT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span>Welcome to FAMILY RESTAURANT:</span> Enjoy delicious multi-cuisine family meals, freshly prepared with love and hygiene! Demo Hotline: <strong>+91 90000 00000</strong>
+  </aside>
+
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" aria-label="FAMILY RESTAURANT Home">
+        <span class="site-logo">FAMILY RESTAURANT</span>
+        <span class="site-logo-tagline">Good Food • Great Moments</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="primaryNav">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="offers.html" class="nav-link">Special Offers</a></li>
+          <li><a href="family-dining.html" class="nav-link">Family Dining</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="booking.html" class="nav-link">Table Booking</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart Action & Hamburger -->
+      <div class="nav-actions">
+        <button class="cart-icon-btn cart-toggle-trigger" aria-label="View demo shopping cart" title="View Demo Cart">
+          🛒
+          <span class="cart-counter">0</span>
+        </button>
+        <button class="mobile-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- Page Header Hero -->
+    <section class="section-padding section-bg-light text-center" style="padding: 3.5rem 0;">
+      <div class="container">
+        <span class="section-subtitle">Reserve In Advance</span>
+        <h1>Book A Family Table</h1>
+        <div class="section-divider"></div>
+        <p style="max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
+          Whether it’s a quick weeknight dinner, weekend lunch, or birthday gathering, reserve your table to ensure prompt seating.
+        </p>
+      </div>
+    </section>
+
+    <!-- Table Booking Form Section -->
+    <section class="section-padding">
+      <div class="container" style="max-width: 900px;">
+
+        <!-- Demonstration Notice Banner -->
+        <div style="background-color: var(--color-accent-soft); border-left: 4px solid var(--color-accent); padding: 1rem 1.5rem; border-radius: var(--radius-sm); margin-bottom: 2rem;">
+          <strong style="color: var(--color-primary-dark);">Demonstration Notice:</strong>
+          <p style="font-size: 0.9rem; margin-top: 0.25rem;">
+            This reservation form is an interactive front-end demo with client-side JavaScript validation. It does not connect to an actual database, send emails, or reserve a real physical table. No personal data is stored permanently.
+          </p>
+        </div>
+
+        <!-- Success Message Alert -->
+        <div class="alert-message alert-success" id="bookingSuccessAlert" role="alert">
+          <h3 style="color: #1b5e20; font-size: 1.2rem; margin-bottom: 0.4rem;">✓ Demo Reservation Request Received!</h3>
+          <p style="color: #2e7d32; font-size: 0.95rem; margin-bottom: 0;">
+            Your demo reservation request has been submitted successfully. In a production environment, you would receive an SMS and email confirmation with your booking code. Thank you for testing the FAMILY RESTAURANT reservation system!
+          </p>
+        </div>
+
+        <!-- The Booking Form -->
+        <div class="form-card">
+          <form id="tableBookingForm" novalidate aria-label="Table reservation form">
+            <div class="form-grid">
+
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="bookingName" class="form-label">Full Name *</label>
+                <input type="text" id="bookingName" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                <span class="form-error">Please enter your full name.</span>
+              </div>
+
+              <!-- Mobile Number -->
+              <div class="form-group">
+                <label for="bookingPhone" class="form-label">Mobile Number *</label>
+                <input type="tel" id="bookingPhone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                <span class="form-error">Please enter a valid mobile number.</span>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="bookingEmail" class="form-label">Email Address *</label>
+                <input type="email" id="bookingEmail" class="form-control" placeholder="e.g. rahul@example.com" required>
+                <span class="form-error">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Number of Guests -->
+              <div class="form-group">
+                <label for="bookingGuests" class="form-label">Number of Guests *</label>
+                <select id="bookingGuests" class="form-control" required>
+                  <option value="">Select Guests</option>
+                  <option value="1">1 Person</option>
+                  <option value="2">2 Guests (Couple)</option>
+                  <option value="3">3 Guests (Small Family)</option>
+                  <option value="4">4 Guests (Family Table)</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests (Large Booth)</option>
+                  <option value="8">8 Guests (Combined Table)</option>
+                  <option value="10">10+ Guests (Group Gathering)</option>
+                </select>
+                <span class="form-error">Please select the number of guests.</span>
+              </div>
+
+              <!-- Booking Date -->
+              <div class="form-group">
+                <label for="bookingDate" class="form-label">Booking Date *</label>
+                <input type="date" id="bookingDate" class="form-control" required>
+                <span class="form-error">Please pick a reservation date.</span>
+              </div>
+
+              <!-- Preferred Time -->
+              <div class="form-group">
+                <label for="bookingTime" class="form-label">Preferred Time *</label>
+                <select id="bookingTime" class="form-control" required>
+                  <option value="">Select Dining Slot</option>
+                  <option value="12:00 PM">12:00 PM (Lunch Opening)</option>
+                  <option value="12:45 PM">12:45 PM (Lunch Rush)</option>
+                  <option value="1:30 PM">1:30 PM (Midday Lunch)</option>
+                  <option value="2:15 PM">2:15 PM (Late Lunch)</option>
+                  <option value="7:00 PM">7:00 PM (Early Dinner)</option>
+                  <option value="7:45 PM">7:45 PM (Prime Dinner)</option>
+                  <option value="8:30 PM">8:30 PM (Evening Dinner)</option>
+                  <option value="9:15 PM">9:15 PM (Late Dinner)</option>
+                </select>
+                <span class="form-error">Please select a dining time slot.</span>
+              </div>
+
+              <!-- Seating Preference -->
+              <div class="form-group full-width">
+                <label for="bookingSeating" class="form-label">Seating Preference</label>
+                <select id="bookingSeating" class="form-control">
+                  <option value="no-preference">No Preference (First Available)</option>
+                  <option value="family-booth">Cozy Family Cushioned Booth</option>
+                  <option value="window-side">Window Side Table</option>
+                  <option value="quiet-corner">Quiet Senior-Citizen Friendly Corner</option>
+                  <option value="high-chair-near">Table Near Kids / High-Chair Area</option>
+                  <option value="private-dining">Semi-Private Celebration Enclosure</option>
+                </select>
+              </div>
+
+              <!-- Special Requests -->
+              <div class="form-group full-width">
+                <label for="bookingRequests" class="form-label">Special Requests (Optional)</label>
+                <textarea id="bookingRequests" class="form-control" rows="3" placeholder="Tell us about toddler high-chairs required, birthday cake arrangements, dietary preferences (e.g. Jain / zero spice), or wheelchair assistance..."></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group full-width" style="margin-top: 1rem;">
+                <button type="submit" class="btn btn-primary btn-block" style="padding: 1rem; font-size: 1.05rem;">
+                  Submit Demo Reservation
+                </button>
+                <p style="font-size: 0.8rem; text-align: center; color: var(--color-dark-muted); margin-top: 0.75rem;">
+                  🔒 Interactive frontend test form. No real reservation is recorded.
+                </p>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Reservation Policies & Guidelines -->
+    <section class="section-padding section-bg-light" style="padding-top: 3.5rem; padding-bottom: 3.5rem;">
+      <div class="container" style="max-width: 900px;">
+        <h3 style="margin-bottom: 1.5rem; color: var(--color-primary-dark); text-align: center;">Reservation Guidelines</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem;">
+          <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-beige);">
+            <h4>⏰ Table Holding Time</h4>
+            <p style="font-size: 0.9rem; margin-top: 0.4rem;">Reserved tables are held for up to 15 minutes past booking time during peak weekend hours.</p>
+          </div>
+          <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-beige);">
+            <h4>👶 Baby High-Chairs</h4>
+            <p style="font-size: 0.9rem; margin-top: 0.4rem;">Complimentary sanitized high-chairs and booster cushions are readily available on request.</p>
+          </div>
+          <div style="background: white; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-beige);">
+            <h4>🎂 Birthday Celebrations</h4>
+            <p style="font-size: 0.9rem; margin-top: 0.4rem;">Mention your birthday in special requests for celebration music and complimentary dessert plates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Slide-over Demo Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Demo Shopping Cart">
+    <div class="cart-drawer-header">
+      <h3>Your Demo Order</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items-list" id="cartItemsContainer"></div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Subtotal:</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-total-row" style="font-size: 1.3rem;">
+        <span>Total (Demo):</span>
+        <span id="cartTotal" style="color: var(--color-primary);">₹0</span>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--color-dark-muted); margin-bottom: 1rem;">
+        * This is an illustrative frontend demo. No real payment or delivery is handled.
+      </p>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="btn btn-outline btn-sm" id="clearCartBtn" style="flex: 1;">Clear</button>
+        <button class="btn btn-accent btn-sm" id="checkoutBtn" style="flex: 2;">Demo Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll back to top of page" title="Scroll to top">↑</button>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--color-cream); margin-bottom: 0.5rem;">FAMILY RESTAURANT</h3>
+          <p style="margin-bottom: 1rem;">A generic category demonstration website representing wholesome family dining, welcoming hospitality, comfortable seating, and freshly prepared multi-cuisine delicacies.</p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" aria-label="Facebook (Demo placeholder)">f</a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram (Demo placeholder)">ig</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter (Demo placeholder)">tw</a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube (Demo placeholder)">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Explore Menu</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="family-dining.html">Family Dining</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="booking.html">Table Booking</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#faq">Dining FAQs</a></li>
+            <li><a href="#" class="cart-toggle-trigger">View Demo Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit & Contact</h4>
+          <p style="margin-bottom: 0.4rem;"><strong>Demo Address:</strong></p>
+          <p style="margin-bottom: 0.8rem;">100 Family Boulevard, Central Dining Zone, City 560001 (Illustrative)</p>
+          <p style="margin-bottom: 0.4rem;"><strong>Demo Phone:</strong> +91 90000 00000</p>
+          <p style="margin-bottom: 0.8rem;"><strong>Demo Email:</strong> demo@example.com</p>
+          <p><strong>Hours:</strong> Mon - Sun: 11:30 AM – 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 FAMILY RESTAURANT. Generic category demonstration website. All rights reserved.</p>
+      <p class="footer-disclaimer">
+        Notice: FAMILY RESTAURANT is a generic concept demonstration website created to showcase design, responsive layout, and interactive features. Fictional demo content, prices, and reviews are illustrative only.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
